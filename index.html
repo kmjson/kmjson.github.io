@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<title>Jason Kim</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.button {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+.button2 {
+    background-color: black;
+    color: white;
+    border: 2px solid #555555;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+}
+</style>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
+    <a href="#cs" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMPUTER SCIENCE</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#music" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MUSIC</a>
+  <a href="#cs" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COMPUTER SCIENCE</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="music1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <p style="background-color:black ;border: 3px solid white; font-size:22px"><b>Directing STC Band 2017</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="cs1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <p style="background-color:white ;border: 3px solid black; font-size:22px"><b>Helping in the CS Dojo</b></p>    
+    </div>
+  </div>
+
+  <!-- The Music Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:65%" id="music">
+    <h2 class="w3-wide">MUSIC</h2>
+    <p class="w3-opacity"><i>I love music.</i></p>
+    <p class="w3-justify">I have been a pianist for 11 years and a percussionist for 10 years. As time passed, I grew more and more as a musician. Now I am at a point in which music is one of my absolute favorite things in the world, whether I am listening or making. I've taken this hobby and have made it a passion of mine now. I am now a Music Director in my school's theater community, STC, and the principal percussionist of the NY All-City Concert Band.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-half">
+        <p>STC</p>
+        <img src="music2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:67%; border:3px solid black">
+      </div>
+      <div class="w3-half">
+        <p>All-City</p>
+        <img src="music3.PNG" class="w3-round w3-margin-bottom" alt="Random Name" style="width:67%; border:3px solid black">
+      </div>
+    </div>
+    <a href="music.html"><button class="button button1">More!</button></a>
+  </div>
+
+  <!-- The CS Section -->
+  <div class="w3-black" id="cs">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:65%" id="cs">
+    <h2 class="w3-wide" style="max-width:100%">COMPUTER SCIENCE</h2>
+    <p class="w3-opacity"><i>I love CS.</i></p>
+    <p class="w3-justify">Hello World! My compuer science journey began in September, 2016. I was a Sophomore and was taking an Intro-Class. That's when I fell in love with computers and coding. I have now taken APCS on top of my Intro-Classes and don't plan to stop anytime soon. I hope to make this my career one day! I have also done a lot of teaching, whether that be at CStuy, or in the CSDojo.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-half">
+        <p>Processing Demo</p>
+        <img src="cs2.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:67% ; border:3px solid white">
+      </div>
+      <div class="w3-half">
+        <p>Chain-Reaction Project</p>
+        <img src="cs3.PNG" class="w3-round w3-margin-bottom" alt="Random Name" style="width:67% ; border:3px solid white">
+      </div>
+    </div>
+        <a href="cs.html"><button class="button button2">More!</button></a>
+  </div>
+  </div>
+
+  <!-- The About Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:65%" id="about">
+    <h2 class="w3-wide">ABOUT</h2>
+    <p class="w3-opacity"><i>All about me.</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-half">
+        <p class="w3-justify"; style="width=93%">My name is Jason Kim and I am now a Rising-Senior in Stuyvesant High School. As you can tell, I am both a musician and a programmer. I have been playing music for around 11 years, and I have been programming for around 2 years.</p>
+            <p class="w3-justify"; style="width=93%">This website was made as a side-project in the summer of 2018. I wanted to see the process of making a "professional" website, so I decided to take on the challenge of making one for myself. I used resources provided by W3Schools, who have a great template for CSS. This boost really made the process easier. In the future, I plan on making my own CSS template to use. </p>
+            <p class="w3-justify" ; style="width=93%">Below, in the footer, I have placed links for YouTube, FaceBook, Instagram, and GitHub. I haven't uploaded much on the YouTube Channel, but maybe that will change with new music covers. FaceBook is my main method of communication. Instagram is a place for some cool pictures (obviously), and I may start posting some little snippets of music or magic. GitHub is where I hold most of my important projects.</p>
+            </div>
+        <div class="w3-half">
+        <u><p class="w3-center"; style="width:93%">Resume/Experience/Awards</p></u>
+          <table style="width:93%" class="w3-center">
+              <tr><td class="w3-center">12 Years of Piano</td></tr>
+              <tr><td class="w3-center">11 Years of Percussion</td></tr>
+              <tr><td class="w3-center">3 Years of CS</td></tr>
+              <tr><td class="w3-center">100 on NY All-State Snare Drum Exam (Twice!)</td></tr>
+	          <tr><td class="w3-center">4 on AP Music Theory Exam</td></tr>
+              <tr><td class="w3-center">5 on APCS Exam</td></tr>
+              <tr><td class="w3-center">4 Years in Stuyvesant Theater Community</td></tr>
+              <tr><td class="w3-center">2.5 Years Directing Stuyvesant Theater Community</td></tr>
+              <tr><td class="w3-center">4 Years in NY All-City</td></tr>
+              <tr><td class="w3-center">3 Years Principal Percussionist in NY All-City</td></tr>
+              <tr><td class="w3-center">4 Years in Stuyvesant SING!</td></tr>
+              <tr><td class="w3-center">3 Years Directing Stuyvesant SING!</td></tr>
+              <tr><td class="w3-center">2 Years as Musical Coordinator in Stuyvesant SING!</td></tr>
+              <tr><td class="w3-center">1 Year as "Senpai" in CSDojo</td></tr>
+              <tr><td class="w3-center">CStuy Mentor 2018</td></tr>
+		<tr><td class="w3-center">The Carmine Coppola Music Composition Award 2019</td></tr>
+		<tr><td class="w3-center">Stuyvesant Symphonic Band Hightest Honor 2019</td></tr>
+		<tr><td class="w3-center">Max A. Watras Excellence in Music Award 2019</td></tr>
+		<tr><td class="w3-center">Stuyvesant Honors Physics Award 2019</td></tr>
+
+          </table>
+            </div>
+      </div>
+      <div class="w3-row w3-padding-32">
+      <div class="w3-half">
+          <img src="me1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:67%; border:3px solid black">
+      </div>
+      <div class="w3-half">
+          <img src="me2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:67%; border:3px solid black">
+      </div>
+      </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+    
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.youtube.com/channel/UCuxUUyIdVW0P3gxV2PlWmOg/" target="_blank"><i class="fa fa-youtube w3-hover-opacity" ></i></a>
+  <a href="https://www.facebook.com/profile.php?id=100009383284774" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" ></i></a>
+  <a href="https://www.instagram.com/jason_kimchi/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://github.com/jkim33" target="_blank"><i class="fa fa-github w3-hover-opacity" ></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
