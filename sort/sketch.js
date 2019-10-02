@@ -5,6 +5,7 @@ let insertionDelayAmount = 17;
 let running;
 let sortMethod;
 let interval;
+let rectWidth;
 
 //FOR BUBBLE SORT
 let amountSorted;
@@ -21,7 +22,14 @@ let currIndex;
 let amountOrdered;
 
 function setup() {
-  createCanvas(960, 550);
+  if (windowWidth - 10 < 960) {
+    createCanvas(windowWidth - 10, 550);
+    rectWidth = (windowWidth - 10) / array.length;
+  } else {
+    createCanvas(960, 550);
+    rectWidth = 960 / array.length;
+  }
+
   background(color(255));
 
   reset();
@@ -47,7 +55,7 @@ function drawIt() {
     let rectColor = color(0, 0, 255 - array[i] * 5 + 10);
     noStroke();
     fill(rectColor);
-    rect(i * 15, 0, 15, array[i] * 10);
+    rect(i * rectWidth, 0, rectWidth, array[i] * 10);
   }
   if (running) {
     if (sortMethod == 'Bubble Sort') {
@@ -91,8 +99,8 @@ function bubbleSort() {
   let rectColor = color(255, 0, 0);
   noStroke();
   fill(rectColor);
-  rect(index * 15, 0, 15, array[index] * 10);
-  rect((index + 1) * 15, 0, 15, array[index + 1] * 10);
+  rect(index * rectWidth, 0, rectWidth, array[index] * 10);
+  rect((index + 1) * rectWidth, 0, rectWidth, array[index + 1] * 10);
 
   let temp = array[index + 1];
   if (temp < array[index]) {
@@ -115,16 +123,16 @@ function selectionSort() {
   let rectColor = color(255, 0, 0);
   noStroke();
   fill(rectColor);
-  rect(selectionIndex * 15, 0, 15, array[selectionIndex] * 10);
-  rect(smallestIndex * 15, 0, 15, array[smallestIndex] * 10);
+  rect(selectionIndex * rectWidth, 0, rectWidth, array[selectionIndex] * 10);
+  rect(smallestIndex * rectWidth, 0, rectWidth, array[smallestIndex] * 10);
 }
 
 function selectionSwap() {
   let rectColor = color(255, 0, 0);
   noStroke();
   fill(rectColor);
-  rect(selectionSorted * 15, 0, 15, array[selectionSorted] * 10);
-  rect(smallestIndex * 15, 0, 15, array[smallestIndex] * 10);
+  rect(selectionSorted * rectWidth, 0, rectWidth, array[selectionSorted] * 10);
+  rect(smallestIndex * rectWidth, 0, rectWidth, array[smallestIndex] * 10);
 
   let temp = array[selectionSorted];
   array[selectionSorted] = array[smallestIndex];
@@ -140,8 +148,8 @@ function insertionSort() {
   let rectColor = color(255, 0, 0);
   noStroke();
   fill(rectColor);
-  rect(currIndex * 15, 0, 15, array[currIndex] * 10);
-  rect((currIndex - 1) * 15, 0, 15, array[currIndex - 1] * 10);
+  rect(currIndex * rectWidth, 0, rectWidth, array[currIndex] * 10);
+  rect((currIndex - 1) * rectWidth, 0, rectWidth, array[currIndex - 1] * 10);
 
   let temp = array[currIndex - 1];
   if (temp > array[currIndex]) {
