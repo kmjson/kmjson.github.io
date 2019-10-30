@@ -126,6 +126,18 @@ h4 {
   background: url('../img/me.jpg') no-repeat center center/cover;
 }
 
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.list img {
+  margin: 0.25rem 0;
+  height: 5rem !important;
+}
+
 @media screen and (max-width: 47.9375rem) {
   .card {
     flex-direction: column;
