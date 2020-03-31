@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto+Slab&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Slab', sans-serif !important;
 }
