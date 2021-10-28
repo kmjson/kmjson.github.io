@@ -5,7 +5,7 @@ let textCounter = 0;
 let font;
 
 let counter = 0;
-let pos = [0,150,300,450,600,0,150,300,450,0,150,300];
+let pos = [0,150,300,450,600,0,150,300,450,-100,0,150,300,-100,-100];
 
 function preload() {
   font = loadFont('fonts/ARIMO-ITALIC.TTF');
@@ -14,11 +14,11 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
-  letter = 'HAPPY BDAY MOM'.replace(/\s/g, '').split('');
+  letter = 'HAPPYBDAY MOM  '.split('');
   textCounter = 0;
   gravity = createVector(0, 0.2);
   addFirework();
-  setInterval(addFirework, 2000);
+  setInterval(addFirework, 500);
 }
 
 function draw() {
@@ -28,7 +28,7 @@ function draw() {
 }
 
 function addFirework() {
-  fireworks.push(new Firework(pos[counter%12]+10));
+  fireworks.push(new Firework(pos[counter%15]+10));
   counter++;
 }
 
