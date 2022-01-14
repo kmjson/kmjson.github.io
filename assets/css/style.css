@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto+Slab&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif !important;
+}
+
+p,
+h2,
+h4 {
+  margin-bottom: 0;
+}
+
+.navbar {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-brand {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 0;
+  margin: 0 0.5rem !important;
+  padding: 0.5rem !important;
+  font-size: 1.5rem !important;
+}
+
+.navbar-toggler {
+  margin-right: 1rem !important;
+}
+
+.nav-item .nav-link {
+  font-size: 1rem !important;
+  padding: 0.85rem 1.2rem !important;
+}
+
+.nav-item .nav-link:hover {
+  background: #555 !important;
+}
+
+.navbar-nav .icons a i {
+  margin: 0.55rem;
+}
+
+.navbar-nav .icons {
+  margin: 0 0.5rem;
+}
+
+#topCarousel .first {
+  background: url('../img/image1.png') no-repeat center center/cover;
+  height: 100vh;
+}
+#topCarousel .second {
+  background: url('../img/image2.png') no-repeat center center/cover;
+  height: 100vh;
+}
+#topCarousel .third {
+  background: url('../img/image3.png') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.title {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+
+#topCarousel h1 {
+  font-size: 3.5rem;
+}
+
+#topCarousel h2 {
+  font-size: 2.75rem;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.container {
+  color: white;
+  padding: 4.5rem 0;
+}
+
+#experience .container,
+#leadership .container,
+#projects .container {
+  border-bottom: dashed white 2px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background: #f4f4f4;
+  margin: auto;
+  width: 90%;
+  color: black;
+}
+
+.preview {
+  flex: 1;
+}
+
+.info {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+#project1 {
+  background: url('../img/p1.png') no-repeat center top/cover;
+}
+
+#project2 {
+  background: url('../img/p2.png') no-repeat center top/cover;
+}
+
+#project3 {
+  background: url('../img/p3.png') no-repeat center bottom/cover;
+}
+
+.btn {
+  margin-top: 0.5rem;
+}
+
+#me {
+  background: url('../img/me.jpg') no-repeat center center/cover;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.list img {
+  margin: 0.25rem 0;
+  height: 5rem !important;
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card .preview {
+    flex: 0 0 14rem;
+  }
+
+  #topCarousel h2 {
+    font-size: 2rem;
+  }
+}
